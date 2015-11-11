@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Game:</strong>
+  <%= @move.game_id %>
+</p>
+
+<p>
+  <strong>Player:</strong>
+  <%= @move.player_id %>
+</p>
+
+<p>
+  <strong>Square:</strong>
+  <%= @move.square %>
+</p>
+
+<p>
+  <strong>Symbol:</strong>
+  <%= @move.symbol %>
+</p>
+
+<%= link_to 'Edit', edit_move_path(@move) %> |
+<%= link_to 'Back', moves_path %>
